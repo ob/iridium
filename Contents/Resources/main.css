@@ -1,9 +1,23 @@
 #Chat {
+	margin: 0px;
 	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
-.event > .x-message {
+body {
+	margin: 0px;
+}
+
+.event > .x-message, .status > .x-message {
 	color: #6666FF;
+}
+
+.firstFocus {
+	border-top: 1px solid #dddddd;
+}
+
+.lastFocus {
+	border-bottom: 1px solid #dddddd;
 }
 
 a {
@@ -23,6 +37,11 @@ a:hover{
 	padding-top: 4px;
 }
 
+.x-line {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 .message:not(.action) > .x-sender:before {
 	content: "<";
 }
@@ -33,6 +52,10 @@ a:hover{
 
 .action > .x-sender:before {
 	content: "* ";
+}
+
+.focus {
+	background-color: #f8f8f8;
 }
 
 .actionMessageBody:before { content:""; }
