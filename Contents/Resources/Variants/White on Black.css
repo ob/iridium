@@ -1,0 +1,20 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+.mention > .x-sender {
+	color: #FFFF66;
+}
+
+.message > .x-sender:before, .message > .x-sender:after, .event > .x-sender:before, #topic {
+	color: white;
+}
+
+a {
+	color: #9999FF;
+}
+
+#topic {
+	background-color: black;
+}

@@ -1,0 +1,39 @@
+#Chat {
+	padding-bottom: 5px;
+}
+
+.event > .x-message {
+	color: #6666FF;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+#topic {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 4px;
+	padding-top: 4px;
+}
+
+.message:not(.action) > .x-sender:before {
+	content: "<";
+}
+
+.message:not(.action) > .x-sender:after {
+	content: ">";
+}
+
+.action > .x-sender:before {
+	content: "* ";
+}
+
+.actionMessageBody:before { content:""; }
+.actionMessageBody:after { content:""; }
